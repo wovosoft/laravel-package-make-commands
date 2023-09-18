@@ -37,6 +37,11 @@ Make Request
 php artisan make:package-request TestRequest
 ```
 
+Make Factory
+```shell
+php artisan make:package-factory TestFactory
+```
+
 Make Custom Validation Rule
 ```shell
 php artisan make:rule TestRule
