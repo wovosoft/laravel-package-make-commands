@@ -5,39 +5,56 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Extended version of laravel's default `make:*` commands. During package development, this package can be
+helpful. 
 
 ## Installation
 
 Via Composer
 
 ``` bash
-$ composer require wovosoft/laravel-package-make-commands
+composer require wovosoft/laravel-package-make-commands
 ```
 
 ## Usage
 
+Make Model
+
+```shell
+php artisan make:package-model Test
+php artisan make:package-model Test -m
+php artisan make:package-model Test -mc
+php artisan make:package-model Test -mcf
+```
+
+Make Controller
+```shell
+php artisan make:package-controller TestController
+```
+
+Make Request
+```shell
+php artisan make:package-request TestRequest
+```
+
+Make Custom Validation Rule
+```shell
+php artisan make:rule TestRule
+```
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
-## Testing
 
-``` bash
-$ composer test
-```
 
 ## Contributing
 
 Please see [contributing.md](contributing.md) for details and a todolist.
 
-## Security
-
-If you discover any security related issues, please email author@email.com instead of using the issue tracker.
 
 ## Credits
 
-- [Author Name][link-author]
+- [Narayan Adhikary][link-author]
 - [All Contributors][link-contributors]
 
 ## License
