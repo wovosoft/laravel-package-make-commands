@@ -18,7 +18,6 @@ class LaravelPackageMakeCommandsServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-package-make-commands')
-            ->hasConfigFile()
             ->hasCommands([
                 PackageControllerMakeCommand::class,
                 PackageModelMakeCommand::class,
